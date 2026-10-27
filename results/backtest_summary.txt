@@ -1,0 +1,60 @@
+MEMECOIN PAPER-TRADING BACKTEST — RESULTS
+Tokens: BONK, BRETT, DEGEN, MEW, PEPE, PNUT, POPCAT, TOSHI, WIF
+Period: 2025-10-28 .. 2026-10-27  (365 daily candles each)
+Frictions: fee 30bps/side, slippage 50-400bps/side by liquidity, illiquidity/rug exit haircut 0-300bps.
+
+EQUAL-WEIGHT PORTFOLIO PER STRATEGY ($1,000 per token):
+         strategy  tokens  total_return_pct  win_rate_pct  max_drawdown_pct  num_trades  sharpe
+    fomo_baseline       9             -13.4          13.3             -16.5          15   -1.73
+          dip_buy       9             -14.2          41.0             -29.9          39   -0.20
+momentum_breakout       9             -40.5          22.6             -43.0          62   -1.29
+     ma_crossover       9             -58.6          10.0             -58.6          60   -2.22
+     buy_and_hold       9             -71.7           0.0             -75.4           9   -1.01
+
+PER STRATEGY x TOKEN:
+         strategy  token  network  reserve_usd  total_return_pct  win_rate_pct  max_drawdown_pct  num_trades  sharpe
+momentum_breakout   BONK   solana     302456.0             -63.3           0.0             -71.1           6   -1.81
+          dip_buy   BONK   solana     302456.0             -50.1          40.0             -50.9           5   -1.14
+     ma_crossover   BONK   solana     302456.0             -63.4           0.0             -63.4           5   -2.12
+    fomo_baseline   BONK   solana     302456.0             -15.0           0.0             -15.0           1   -1.99
+     buy_and_hold   BONK   solana     302456.0             -81.0           0.0             -84.6           1   -1.21
+momentum_breakout  BRETT     base    1096872.0             -51.4          28.6             -53.3           7   -0.91
+          dip_buy  BRETT     base    1096872.0             -27.5          50.0             -50.6           6   -0.14
+     ma_crossover  BRETT     base    1096872.0             -73.8           0.0             -73.8           7   -1.98
+    fomo_baseline  BRETT     base    1096872.0             -18.1           0.0             -21.0           2   -0.87
+     buy_and_hold  BRETT     base    1096872.0             -85.4           0.0             -87.7           1   -1.07
+momentum_breakout  DEGEN     base     254767.0             -52.0          14.3             -59.4           7   -0.37
+          dip_buy  DEGEN     base     254767.0             -57.9          20.0             -65.5           5   -1.39
+     ma_crossover  DEGEN     base     254767.0             -66.3          12.5             -74.1           8   -0.59
+    fomo_baseline  DEGEN     base     254767.0             -55.5           0.0             -56.0           4   -0.99
+     buy_and_hold  DEGEN     base     254767.0             -61.7           0.0             -69.9           1   -0.15
+momentum_breakout    MEW   solana    8882869.0             -32.7          14.3             -44.4           7   -0.86
+          dip_buy    MEW   solana    8882869.0             -37.2          20.0             -43.7           5   -0.74
+     ma_crossover    MEW   solana    8882869.0             -61.2           0.0             -61.2           6   -2.00
+    fomo_baseline    MEW   solana    8882869.0               0.0           0.0               0.0           0    0.00
+     buy_and_hold    MEW   solana    8882869.0             -77.9           0.0             -83.1           1   -1.27
+momentum_breakout   PEPE ethereum   29435319.0             -11.8          50.0             -31.5           8    0.04
+          dip_buy   PEPE ethereum   29435319.0              11.6          33.3             -23.3           3    0.45
+     ma_crossover   PEPE ethereum   29435319.0             -52.9          11.1             -60.3           9   -1.32
+    fomo_baseline   PEPE ethereum   29435319.0               6.2          33.3             -27.2           3    0.34
+     buy_and_hold   PEPE ethereum   29435319.0             -40.6           0.0             -67.4           1   -0.01
+momentum_breakout   PNUT   solana    2950533.0             -26.8          28.6             -39.3           7   -0.25
+          dip_buy   PNUT   solana    2950533.0             -28.1          25.0             -36.0           4   -0.66
+     ma_crossover   PNUT   solana    2950533.0             -38.1          33.3             -42.7           6   -0.46
+    fomo_baseline   PNUT   solana    2950533.0             -22.6           0.0             -23.9           1   -1.28
+     buy_and_hold   PNUT   solana    2950533.0             -71.3           0.0             -72.4           1   -0.73
+momentum_breakout POPCAT   solana    3394678.0             -40.5          28.6             -47.1           7   -0.98
+          dip_buy POPCAT   solana    3394678.0               8.4          50.0             -33.7           4    0.40
+     ma_crossover POPCAT   solana    3394678.0             -53.7          28.6             -55.0           7   -1.31
+    fomo_baseline POPCAT   solana    3394678.0             -15.2           0.0             -17.3           1   -1.17
+     buy_and_hold POPCAT   solana    3394678.0             -72.9           0.0             -75.0           1   -0.77
+momentum_breakout  TOSHI     base    1036874.0             -44.3          16.7             -44.3           6   -1.57
+          dip_buy  TOSHI     base    1036874.0              36.3         100.0             -31.3           4    0.83
+     ma_crossover  TOSHI     base    1036874.0             -54.8           0.0             -55.9           5   -2.12
+    fomo_baseline  TOSHI     base    1036874.0              -3.8           0.0             -10.2           1   -0.22
+     buy_and_hold  TOSHI     base    1036874.0             -86.6           0.0             -87.4           1   -1.76
+momentum_breakout    WIF   solana    5319354.0             -42.1          14.3             -50.9           7   -0.87
+          dip_buy    WIF   solana    5319354.0              16.4          33.3             -29.4           3    0.55
+     ma_crossover    WIF   solana    5319354.0             -63.2           0.0             -63.7           7   -1.87
+    fomo_baseline    WIF   solana    5319354.0               3.1          50.0              -8.8           2    0.27
+     buy_and_hold    WIF   solana    5319354.0             -68.2           0.0             -75.2           1   -0.62

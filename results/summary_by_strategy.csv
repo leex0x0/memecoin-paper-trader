@@ -1,0 +1,6 @@
+strategy,tokens,total_return_pct,win_rate_pct,max_drawdown_pct,num_trades,sharpe
+fomo_baseline,9,-13.4,13.3,-16.5,15,-1.73
+dip_buy,9,-14.2,41.0,-29.9,39,-0.2
+momentum_breakout,9,-40.5,22.6,-43.0,62,-1.29
+ma_crossover,9,-58.6,10.0,-58.6,60,-2.22
+buy_and_hold,9,-71.7,0.0,-75.4,9,-1.01

@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# live paper-trading runtime outputs (generated per run; can grow unbounded)
+results/live_prices.csv
+results/live_state.json
+results/live_equity.csv
+results/live_paper_trades.csv
+
+# not part of this project
+skills/
